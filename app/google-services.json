@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "208504161686",
+    "project_id": "wedin-947b1",
+    "storage_bucket": "wedin-947b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208504161686:android:bd1eb21ed98e087abbc9b7",
+        "android_client_info": {
+          "package_name": "com.anshu.wedin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208504161686-krttnbmotgo8pmoretaqmlafc47f5c9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuKIXDPKOzmzbcvrA014STE_d5vrj0f3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208504161686-krttnbmotgo8pmoretaqmlafc47f5c9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
