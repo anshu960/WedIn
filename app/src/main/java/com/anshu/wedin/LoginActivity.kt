@@ -8,6 +8,10 @@ import android.util.Patterns
 import android.widget.Toast
 import com.anshu.wedin.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class LoginActivity : AppCompatActivity() {
 
@@ -49,6 +53,41 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun loginUser() {
+        progressDialog.setMessage("Logging In")
+        progressDialog.show()
 
+        firebaseAuth.signInWithEmailAndPassword(email, password)
+            .addOnSuccessListener {
+                checkUser()
+            }
+            .addOnFailureListener { e->
+               progressDialog.dismiss()
+               Toast.makeText(this, "Login failed due to ${e.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    private fun checkUser() {
+       progressDialog.setMessage("Check User")
+
+       val firebaseUser = firebaseAuth.currentUser!!
+       val ref = FirebaseDatabase.getInstance().getReference("Users")
+       ref.child(firebaseUser.uid)
+           .addListenerForSingleValueEvent(object: ValueEventListener{
+
+               override fun onDataChange(snapshot: DataSnapshot) {
+                  progressDialog.dismiss()
+                  val userType = snapshot.child("userType").value
+                   if (userType == "user"){
+                       startActivity(Intent(this@LoginActivity, WedinActivity::class.java))
+                       finish()
+                   }
+                   else if (userType == "admin"){
+
+                   }
+               }
+               override fun onCancelled(error: DatabaseError) {
+
+               }
+           })
     }
 }
