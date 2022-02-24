@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/WedIn/app/src/main/res/drawable/shape_editext01.xml" value="0.1115" />
+        <entry key="..\:/WedIn/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/WedIn/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/WedIn/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
         <entry key="..\:/WedIn/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/WedIn/app/src/main/res/layout/activity_wedin.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
