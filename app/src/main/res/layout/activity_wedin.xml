@@ -108,10 +108,11 @@
                 android:id="@+id/address"
                 android:layout_width="295dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="4dp"
-                android:text="13 wazirpur press area"
+                android:text="13 wazirpur press area, near dd motors Wazirpur, New Delhi, Delhi 110052"
                 android:textAllCaps="false"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
