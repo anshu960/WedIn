@@ -28,6 +28,7 @@ class SplashActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser == null){
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
         else{
 
