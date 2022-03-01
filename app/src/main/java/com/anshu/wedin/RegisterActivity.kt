@@ -23,6 +23,10 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Please Wait")
         progressDialog.setCanceledOnTouchOutside(false)
+
+        binding.login.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
         binding.button.setOnClickListener {
           validateData()
         }

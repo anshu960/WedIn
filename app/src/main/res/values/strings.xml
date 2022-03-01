@@ -2,5 +2,6 @@
     <string name="app_name">WedIn</string>
     <string name="Register">New to GIDIUP?<b>Register</b></string>
     <string name="guest">Going <b>+100 guest</b></string>
+    <string name="already_account">Already have an account?<b>Login</b></string>
 
 </resources>
