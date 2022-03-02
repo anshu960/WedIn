@@ -25,7 +25,7 @@ class RegisterActivity : AppCompatActivity() {
         progressDialog.setCanceledOnTouchOutside(false)
 
         binding.login.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, WedinActivity::class.java))
         }
         binding.button.setOnClickListener {
           validateData()

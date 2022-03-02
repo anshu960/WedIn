@@ -56,9 +56,11 @@
         android:layout_width="409dp"
         android:layout_height="510dp"
         android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="2dp"
         android:background="@drawable/login_page"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
@@ -110,13 +112,13 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
             android:layout_width="363dp"
             android:layout_height="wrap_content"
-            android:hint="Email Id"
-            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense"
             android:layout_marginStart="1dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="1dp"
+            android:hint="Email Id"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/username">
