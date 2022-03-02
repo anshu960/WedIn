@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
-        android:background="@color/purple_20"
+        android:background="@color/head"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -459,7 +459,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:backgroundTint="@color/purple_50"
+        app:backgroundTint="@color/head"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_baseline_add_24" />
