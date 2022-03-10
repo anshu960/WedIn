@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class Adapter(val menuList: ArrayList<event>) : RecyclerView.Adapter<Adapter.MyviewHolder>() {
+class Adapter(val menuList: ArrayList<DataEvent>) : RecyclerView.Adapter<Adapter.MyviewHolder>() {
     class MyviewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val text:TextView = itemView.findViewById(R.id.couple)
         val text2:TextView = itemView.findViewById(R.id.couple2)
@@ -20,8 +20,10 @@ class Adapter(val menuList: ArrayList<event>) : RecyclerView.Adapter<Adapter.Myv
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
-        holder.text.text = menuList[position].coupleName1
-        holder.text.text = menuList[position].coupleName2
+      //  holder.text.text = menuList[position].coupleName1
+       // holder.text.text = menuList[position].coupleName2
+          holder.text.text = menuList[position].coupleName1
+          holder.text2.text = menuList[position].coupleName2
         holder.coupleimg.setImageResource(menuList[position].coupleimg)
     }
 
