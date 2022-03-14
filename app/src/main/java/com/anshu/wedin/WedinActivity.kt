@@ -14,24 +14,23 @@ class WedinActivity : AppCompatActivity() {
         val list = ArrayList<DataEvent>()
         var adapterevent:Adapter? = null
 
-        list.add(DataEvent(R.drawable.ellipse2, "Anshu Singh", "Nisha Singh"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
-        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
-        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
-        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
-        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
-        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma"))
-        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma"))
+        list.add(DataEvent(R.drawable.ellipse2, "Anshu Singh", "Nisha Singh",
+            8, "Dec", 2020))
+        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma",
+            20,"Feb", 2020))
+        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma",
+        12,"March", 2020))
+        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma",
+            12, "June", 2010))
+        list.add(DataEvent(R.drawable.ellipse2, "Anshu Singh", "Nisha Singh",
+            8, "Dec", 2022))
+        list.add(DataEvent(R.drawable.ellipse3, "Manik Kathuriya", "Anupriya Sharma",
+            20,"Feb", 2020))
+        list.add(DataEvent(R.drawable.ellipse4, "Deepali Kathuriya", "Ayush Sharma",
+            12,"March", 2020))
+        list.add(DataEvent(R.drawable.ellipse2, "Rahul Kathuriya", "Priya Sharma",
+            12, "June", 2010))
+
 
         adapterevent = Adapter(list)
         recyclerview.layoutManager = LinearLayoutManager(this)
