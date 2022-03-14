@@ -11,6 +11,8 @@ class Adapter(val menuList: ArrayList<DataEvent>) : RecyclerView.Adapter<Adapter
     class MyviewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val text:TextView = itemView.findViewById(R.id.couple)
         val text2:TextView = itemView.findViewById(R.id.couple2)
+        val text3:TextView = itemView.findViewById(R.id.date)
+        val text4:TextView = itemView.findViewById(R.id.address)
         val coupleimg:ImageView = itemView.findViewById(R.id.couple_img)
     }
 
@@ -24,6 +26,9 @@ class Adapter(val menuList: ArrayList<DataEvent>) : RecyclerView.Adapter<Adapter
        // holder.text.text = menuList[position].coupleName2
           holder.text.text = menuList[position].coupleName1
           holder.text2.text = menuList[position].coupleName2
+          holder.text3.text = menuList[position].date
+          holder.text4.text = menuList[position].address
+
         holder.coupleimg.setImageResource(menuList[position].coupleimg)
     }
 
