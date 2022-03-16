@@ -30,6 +30,7 @@ class WedinActivity : AppCompatActivity() {
             "Priya Sharma",
             "12 June 2010",
             "Village+P.O- Nagpura, Police Station- Simari, District- Buxar 802118"))
+
         list.add(DataEvent(R.drawable.ellipse2, "Anshu Singh",
             "Nisha Singh",
             "08 Dec 2020",
