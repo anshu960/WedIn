@@ -22,8 +22,6 @@ class Adapter(val menuList: ArrayList<DataEvent>) : RecyclerView.Adapter<Adapter
     }
 
     override fun onBindViewHolder(holder: MyviewHolder, position: Int) {
-      //  holder.text.text = menuList[position].coupleName1
-       // holder.text.text = menuList[position].coupleName2
           holder.text.text = menuList[position].coupleName1
           holder.text2.text = menuList[position].coupleName2
           holder.text3.text = menuList[position].date
