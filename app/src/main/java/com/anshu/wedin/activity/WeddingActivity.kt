@@ -1,4 +1,4 @@
-package com.anshu.wedin
+package com.anshu.wedin.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
