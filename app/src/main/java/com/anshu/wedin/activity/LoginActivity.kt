@@ -31,6 +31,19 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
+        var helper = DatabaseHandler(applicationContext)
+        var db = helper.readableDatabase
+        var rs = db.rawQuery("SELECT * FROM USER", null)
+        signin.setOnClickListener {
+            var cv = ContentValues()
+          //  cv.put("USER", username.editText.toString())
+            cv.put("ID", email.editText.toString())
+            cv.put("PASSWORD", password.editText.toString())
+           // cv.put("MOBILE", mobile.editText.toString())
+            db.insert("TABLE_WED", null, cv)
+
+        }
         signin.setOnClickListener {
             when{
                 TextUtils.isEmpty(nameEt.editText.toString().trim{it <= ' '}) -> {
